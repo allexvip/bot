@@ -73,24 +73,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+(https://github.com/allexvip/bot)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
-
+Here's a example of Telegram bot
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [aiogram](https://github.com/aiogram/aiogram)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -102,26 +94,16 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get Telegram Bot API Key from [@botfather](https://example.com)
 2. Clone the repo
    ```sh
    git clone https://github.com/allexvip/bot.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your TELEGRAM BOT API KEY in `.env`
+
+3. Enter your TELEGRAM BOT API KEY in `.env` file:
    ```js
    TELEGRAM_API_KEY = 'TELEGRAM BOT API KEY';
    ```
@@ -134,7 +116,7 @@ This is an example of how to list things you need to use the software and how to
 ## Usage
 
 Run file: <b>main.py</b> 
-For more examples, please refer to the [Documentation](https://example.com)_
+For more examples, please refer to the [Documentation](https://github.com/allexvip/bot)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -183,8 +165,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [https://github.com/allexvip/bot](https://github.com/allexvip/bot)
 
