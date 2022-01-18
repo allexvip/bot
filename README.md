@@ -97,15 +97,22 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get Telegram Bot API Key from [@botfather](https://example.com)
+1. Get Telegram Bot API Key from [https://t.me/botfather](https://example.com)
 2. Clone the repo
    ```sh
    git clone https://github.com/allexvip/bot.git
    ```
-
-3. Enter your TELEGRAM BOT API KEY in `.env` file:
+3. Install dependencies:
+    ```sh
+   pip install -r requirements.txt
+   ```
+5. Rename file `.env_` to `.env`
+6. Enter your TELEGRAM BOT API KEY in `.env` file:
    ```js
    TELEGRAM_API_KEY = 'TELEGRAM BOT API KEY';
+   TELEGRAM_BOT_NAME = 'botname'
+   TELEGRAM_ADMIN_CHATID = 'Your chatid'
+   START_MESSAGE = 'Hi!'
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -196,6 +203,6 @@ Project Link: [https://github.com/allexvip/bot](https://github.com/allexvip/bot)
 [license-shield]: https://img.shields.io/github/license/allexvip/bot.svg?style=for-the-badge
 [license-url]: https://github.com/allexvip/bot/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/allexvip
 [product-screenshot]: images/screenshot.png
 1
