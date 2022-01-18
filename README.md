@@ -107,7 +107,7 @@ To get a local copy up and running follow these simple example steps.
    pip install -r requirements.txt
    ```
 5. Rename file `.env_` to `.env`
-6. Enter your TELEGRAM BOT API KEY in `.env` file:
+6. Enter your settings to `.env` file:
    ```js
    TELEGRAM_API_KEY = 'TELEGRAM BOT API KEY';
    TELEGRAM_BOT_NAME = 'botname'
