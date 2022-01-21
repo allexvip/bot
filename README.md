@@ -122,7 +122,15 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Run file: <b>main.py</b> 
+ADD your bot to Telegram Group and assign users as admins.
+
+if user send to this group command /moderator 
+```sh
+   /moderator
+   ```
+then this user will have grant for access to manage bot.
+
+Run file: <b>main.py</b>
 For more examples, please refer to the [Documentation](https://github.com/allexvip/bot)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
