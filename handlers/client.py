@@ -1,5 +1,7 @@
 from aiogram import types, Dispatcher
 from create_bot import dp, bot, BOT_NAME, BOT_ADMIN_CHATID, START_MESSAGE
+from keyboards import kb_client
+from aiogram.types import ReplyKeyboardRemove
 
 '''******************** Client part ********************************'''
 
@@ -7,7 +9,7 @@ from create_bot import dp, bot, BOT_NAME, BOT_ADMIN_CHATID, START_MESSAGE
 @dp.message_handler(commands=['start', 'help'])
 async def command_start(message: types.Message):
     try:
-        await bot.send_message(message.from_user.id, START_MESSAGE)
+        await bot.send_message(message.from_user.id, START_MESSAGE, reply_markup=kb_client)
         await message.delete()
     except Exception as e:
         await message.reply('Общение с ботом через личные сообщения, напишите ему:\nhttps://t.me/{0}'.format(BOT_NAME))
@@ -23,7 +25,7 @@ async def open_command(message: types.Message):
 
 @dp.message_handler(commands=['Расположение'])
 async def place_command(message: types.Message):
-    await bot.send_message(message.from_user.id, 'ул. Колбасная 15')
+    await bot.send_message(message.from_user.id, 'ул. Колбасная 15',reply_markup=ReplyKeyboardRemove())
 
 
 # @dp.message_handler(commands=['Меню'])
