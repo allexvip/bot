@@ -111,7 +111,6 @@ To get a local copy up and running follow these simple example steps.
    ```js
    TELEGRAM_API_KEY = 'TELEGRAM BOT API KEY';
    TELEGRAM_BOT_NAME = 'botname'
-   TELEGRAM_ADMIN_CHATID = 'Your chatid'
    START_MESSAGE = 'Hi!'
    ```
 
@@ -122,15 +121,18 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-ADD your bot to Telegram Group and assign users as admins.
+ADD your bot to Telegram Group as admin and assign necessary users as admins.
 
-if user send to this group command /moderator 
+if user admin send to this group command /moderator 
 ```sh
    /moderator
    ```
-then this user will have grant for access to manage bot.
+then this user will have grant for access to manage bot. And bot will answer to user about administration mode.
 
-Run file: <b>main.py</b>
+Run the file: 
+```sh
+   python main.py
+   ```
 For more examples, please refer to the [Documentation](https://github.com/allexvip/bot)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
