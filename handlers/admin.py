@@ -89,6 +89,7 @@ async def load_price(message: types.Message, state: FSMContext):
         # async with state.proxy() as data:
         #     await message.reply(str(data))
         await state.finish()
+        await message.answer('Добавил. Спасибо!')
 
 
 @dp.callback_query_handler(lambda x: x.data and x.data.startswith('del '))

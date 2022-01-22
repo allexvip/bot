@@ -26,11 +26,12 @@ async def open_command(message: types.Message):
 
 @dp.message_handler(commands=['Расположение'])
 async def place_command(message: types.Message):
-    await bot.send_message(message.from_user.id, 'ул. Колбасная 15',reply_markup=ReplyKeyboardRemove())
+    await bot.send_message(message.from_user.id, 'ул. Колбасная 15') #,reply_markup=ReplyKeyboardRemove()
 
 
 @dp.message_handler(commands=['Меню'])
 async def menu_command(message : types.Message):
+    await bot.send_message(message.from_user.id,'У нас есть:', reply_markup = kb_client)
     await sqlite_db.sql_read(message)
 
 def register_handlers_client(dp: Dispatcher):
