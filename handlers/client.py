@@ -1,5 +1,5 @@
 from aiogram import types, Dispatcher
-from create_bot import dp, bot, BOT_NAME, BOT_ADMIN_CHATID, START_MESSAGE
+from create_bot import dp, bot, BOT_NAME, START_MESSAGE
 from keyboards import kb_client
 from aiogram.types import ReplyKeyboardRemove
 from db import sqlite_db
@@ -21,17 +21,17 @@ async def command_start(message: types.Message):
 
 @dp.message_handler(commands=['Режим_работы'])
 async def open_command(message: types.Message):
-    await bot.send_message(message.from_user.id, 'ВС-ЧТ с 9:00 до 20:00, Пт-Сб с 10:00 до 23:00')
+    await bot.send_message(message.from_user.id, 'ПН-ВС с 10:00 до 20:00')
 
 
 @dp.message_handler(commands=['Расположение'])
 async def place_command(message: types.Message):
-    await bot.send_message(message.from_user.id, 'ул. Колбасная 15') #,reply_markup=ReplyKeyboardRemove()
+    await bot.send_message(message.from_user.id, 'Скоро открытие') #,reply_markup=ReplyKeyboardRemove()
 
 
 @dp.message_handler(commands=['Меню'])
 async def menu_command(message : types.Message):
-    await bot.send_message(message.from_user.id,'У нас есть:', reply_markup = kb_client)
+    await bot.send_message(message.from_user.id,'Мы предлагаем:', reply_markup = kb_client)
     await sqlite_db.sql_read(message)
 
 def register_handlers_client(dp: Dispatcher):
