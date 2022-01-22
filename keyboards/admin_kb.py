@@ -7,7 +7,7 @@ button_case_admin = ReplyKeyboardMarkup(resize_keyboard=True).add(
     KeyboardButton('/Загрузить')).add(
     KeyboardButton('/Удалить'))
 
-# кнопки сслыки
+# кнопки ссылки
 urlkb = InlineKeyboardMarkup(row_width=2)
 inline_buttons_list = [
     InlineKeyboardButton(text='yandex', url='https://yandex.ru'),
