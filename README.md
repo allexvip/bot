@@ -98,7 +98,7 @@ To get a local copy up and running follow these simple example steps.
 ### Installation
 
 1. Get Telegram Bot API Key from [https://t.me/botfather](https://example.com)
-2. Clone the repo
+2. Clone the repo:
    ```sh
    git clone https://github.com/allexvip/bot.git
    ```
