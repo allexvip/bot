@@ -2,6 +2,7 @@ from aiogram import types, Dispatcher
 from create_bot import dp, bot, BOT_NAME, BOT_ADMIN_CHATID, START_MESSAGE
 from keyboards import kb_client
 from aiogram.types import ReplyKeyboardRemove
+from db import sqlite_db
 
 '''******************** Client part ********************************'''
 
@@ -28,12 +29,12 @@ async def place_command(message: types.Message):
     await bot.send_message(message.from_user.id, 'ул. Колбасная 15',reply_markup=ReplyKeyboardRemove())
 
 
-# @dp.message_handler(commands=['Меню'])
-# async def menu_command(message : types.Message):
-#     for ret in cur.execute('SELECT * from menu').fetchall():
-#         await bot.send_photo(message.from_user.id,ret[0],'{0}\nОписание{1}\nЦена {2}'.format(ret[1],ret[2],ret[-1]))
+@dp.message_handler(commands=['Меню'])
+async def menu_command(message : types.Message):
+    await sqlite_db.sql_read(message)
 
 def register_handlers_client(dp: Dispatcher):
     dp.message_handler(command_start, commands=['start', 'help'])
     dp.message_handler(open_command, commands=['Режим_работы'])
     dp.message_handler(place_command, commands=['Расположение'])
+    dp.message_handler(menu_command, commands=['Меню'])
