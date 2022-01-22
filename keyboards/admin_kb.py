@@ -10,8 +10,8 @@ button_case_admin = ReplyKeyboardMarkup(resize_keyboard=True).add(
 # кнопки сслыки
 urlkb = InlineKeyboardMarkup(row_width=2)
 inline_buttons_list = [
-    InlineKeyboardButton(text='40R', url='https://40r.ru'),
-    InlineKeyboardButton(text='24ON', url='https://24on.ru'),
+    InlineKeyboardButton(text='yandex', url='https://yandex.ru'),
+    InlineKeyboardButton(text='google', url='https://google.ru'),
 ]
 urlkb.add(*inline_buttons_list)
 
