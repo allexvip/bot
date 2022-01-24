@@ -213,6 +213,6 @@ Project Link: [https://github.com/allexvip/bot](https://github.com/allexvip/bot)
 [license-shield]: https://img.shields.io/github/license/allexvip/bot.svg?style=for-the-badge
 [license-url]: https://github.com/allexvip/bot/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/allexvip
+[linkedin-url]: https://www.linkedin.com/in/alexey-shestopalov-21636272/
 [product-screenshot]: images/screenshot.png
 1
